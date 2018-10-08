@@ -1,0 +1,78 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "template/mixins";
+@import "template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600);
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see template/settings.scss)
+$backgroundColor: #111;
+$lwtvPink: #d1548e;
+
+$mainFont: 'Open Sans', sans-serif;
+$linkColor: #e7ad52;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFontBig: Oswald, sans-serif;
+$headingFont: Montserrat, sans-serif;
+$headingTextShadow:  2px 4px 3px rgba(0,0,0,0.3);
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$heading1Size: 7.6rem;
+$heading2Size: 4rem;
+$heading3Size: 3rem;
+$heading4Size: 2rem;
+$selectionBackgroundColor: #e7ad52;
+
+// Helpers
+
+.reveal {
+	.align-left {
+		text-align: left !important;
+	}
+
+	.mt2 {
+		margin-top: 2rem;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "template/theme";
+// ---------------------------------------------
+
+.reveal {
+	h1 {
+		color: $lwtvPink;
+		font-family: $headingFontBig;
+		text-shadow: $headingTextShadow;
+	}
+
+	blockquote {
+		width: 80%;
+	}
+
+	.huge {
+		color: $lwtvPink;
+		font-family: $headingFontBig;
+		font-size: 16rem;
+		line-height: 1.1;
+	}
+
+	.tall-content {
+		max-height: 600px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+}

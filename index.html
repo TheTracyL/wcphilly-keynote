@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WordCamp Philly Keynote</title>
+
+		<meta name="description" content="The slidedeck for the WordCamp Philly 2018 Keynote.">
+		<meta name="author" content="Tracy Levesque">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/wcphilly.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- FontAwesome -->
+		<script defer src="js/all.min.js"></script> 
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Queer Fans Deserve Data</h1>
+					<h3>Fandom, passion, code and the desire to see fair and positive LGBTQ representation on television</h3>
+					<p>
+						<small>The <a href="https://lezwatchtv.com/" target="_blank">LezWatch.TV</a> story</small>
+					</p>
+
+					<aside class="notes">
+						The notes are working. 
+					</aside>
+				</section>
+
+				<section data-background="img/yikes.jpg">
+
+					<aside class="notes">
+						My wife Mia and I own a web development company in Philadelphia.
+					</aside>
+				</section>
+
+				<section data-background-video="video/vida.mp4" data-background-color="#000000">
+
+					<aside class="notes">
+						Let's admire this shot of Emma. Out Latinx women were involved in every aspect of this show resulting in quality stories. We're getting a season two and MORE episodes than season 1.
+					</aside>
+				</section>
+
+				<section>
+					<h1>Thank You</h1>
+
+					<h2>Tracy Levesque</h2>
+					<h3>Co-Owner / Co-Founder <a href="https://yikesinc.com" target="_blank">YIKES, Inc.</a></h3>
+
+					<h4>
+						<i class="fab fa-twitter"></i> <a href="https://twitter.com/lezwatchtv" target="_blank">@LezWatchTV</a>  &nbsp; &nbsp; &nbsp; <i class="fab fa-twitter"></i> <a href="https://twitter.com/liljimmi" target="_blank">@LilJimmi</a>
+					</h4>
+
+					<h4>
+						<a href="https://slides.lezwatchtv.com/flamecon/">slides.lezwatchtv.com/flamecon</a>
+					</h4>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				transition: 'fade',
+				transitionSpeed: 'fast',
+				width: 1170,
+				autoPlayMedia: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

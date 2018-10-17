@@ -20,6 +20,7 @@
 // Override theme settings (see template/settings.scss)
 $backgroundColor: #111;
 $lwtvPink: #d1548e;
+$white: #fff;
 
 $mainFont: 'Open Sans', sans-serif;
 $linkColor: #e7ad52;
@@ -45,6 +46,10 @@ $selectionBackgroundColor: #e7ad52;
 	.mt2 {
 		margin-top: 2rem;
 	}
+
+	.pink {
+		color: $lwtvPink;
+	}
 }
 
 
@@ -54,7 +59,7 @@ $selectionBackgroundColor: #e7ad52;
 
 .reveal {
 	h1 {
-		color: $lwtvPink;
+		color: $white;
 		font-family: $headingFontBig;
 		text-shadow: $headingTextShadow;
 	}
@@ -64,9 +69,9 @@ $selectionBackgroundColor: #e7ad52;
 	}
 
 	.huge {
-		color: $lwtvPink;
+		color: $white;
 		font-family: $headingFontBig;
-		font-size: 16rem;
+		font-size: 12rem;
 		line-height: 1.1;
 	}
 

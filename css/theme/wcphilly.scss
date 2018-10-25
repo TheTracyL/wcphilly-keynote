@@ -21,6 +21,8 @@
 $backgroundColor: #111;
 $lwtvPink: #d1548e;
 $white: #fff;
+$quoteColor: #8fadd0;
+$success: #2ecc71;
 
 $mainFont: 'Open Sans', sans-serif;
 $linkColor: #e7ad52;
@@ -35,6 +37,17 @@ $heading2Size: 4rem;
 $heading3Size: 3rem;
 $heading4Size: 2rem;
 $selectionBackgroundColor: #e7ad52;
+
+
+// FontAwesome
+
+.icon::before {
+	display: none;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
 
 // Change the speed of fragments
 
@@ -72,7 +85,54 @@ $selectionBackgroundColor: #e7ad52;
 @import "template/theme";
 // ---------------------------------------------
 
+
+// Misc custom styles
+
 .reveal {
+	.bosses {
+		img {
+			width: 24%;
+		}
+	}
+
+	div.left, div.right {
+		display: inline-block;
+		width: 48%;
+		vertical-align: top;
+
+		blockquote {
+			background: rgba(0,0,0,.5);
+			color: $quoteColor;
+			font-family: Georgia, Times, "Times New Roman", serif;
+		    font-size: 2.5rem;
+		    margin-bottom: 1em;
+		    padding: 0.8em;
+		    @include text-shadow;
+			width: 94%;
+
+			.svg-inline--fa.fa-w-16 {
+			    width: 0.6em;
+			}
+		}
+	}
+
+	div.right {
+		padding-right: 0.4em;
+	}
+
+	.horizontal-list {
+		width: 100%;
+		
+		li {
+			display: inline-block;
+			width: 24%;
+		}
+	}
+
+	.no-bullets {
+		list-style-type: none;
+	}
+
 	h1 {
 		color: $white;
 		font-family: $headingFontBig;

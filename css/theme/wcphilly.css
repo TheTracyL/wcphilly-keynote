@@ -6,6 +6,13 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600);
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+.icon::before {
+  display: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
 .reveal .slides section .fragment {
   opacity: 0;
   visibility: hidden;
@@ -286,6 +293,32 @@ body {
 @media print {
   .backgrounds {
     background-color: #111; } }
+.reveal .bosses img {
+  width: 24%; }
+.reveal div.left, .reveal div.right {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top; }
+  .reveal div.left blockquote, .reveal div.right blockquote {
+    background: rgba(0, 0, 0, 0.5);
+    color: #8fadd0;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    width: 94%; }
+    .reveal div.left blockquote .svg-inline--fa.fa-w-16, .reveal div.right blockquote .svg-inline--fa.fa-w-16 {
+      width: 0.6em; }
+.reveal div.right {
+  padding-right: 0.4em; }
+.reveal .horizontal-list {
+  width: 100%; }
+  .reveal .horizontal-list li {
+    display: inline-block;
+    width: 24%; }
+.reveal .no-bullets {
+  list-style-type: none; }
 .reveal h1 {
   color: #fff;
   font-family: Oswald, sans-serif;

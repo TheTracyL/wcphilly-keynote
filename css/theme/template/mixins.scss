@@ -27,3 +27,20 @@
 	background: -ms-radial-gradient( center, $type cover,  $inner 0%, $outer 100% );
 	background: radial-gradient( center, $type cover,  $inner 0%, $outer 100% );
 }
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 2px, $color: rgba(0,0,0,.8)) {
+    text-shadow: $x $y $blur $color;
+}

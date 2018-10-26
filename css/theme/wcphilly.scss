@@ -71,6 +71,10 @@ $selectionBackgroundColor: #e7ad52;
 		text-align: left !important;
 	}
 
+	.align-center {
+		text-align: center !important;
+	}
+
 	.mt2 {
 		margin-top: 2rem;
 	}
@@ -95,25 +99,33 @@ $selectionBackgroundColor: #e7ad52;
 		}
 	}
 
+	.eniac-women {
+		.bosses {
+			img {
+				width: 20%;
+			}
+		}		
+	}
+
+	blockquote {
+		background: rgba(0,0,0,.5);
+		color: $quoteColor;
+		font-family: Georgia, Times, "Times New Roman", serif;
+	    font-size: 2.5rem;
+	    margin-bottom: 1em;
+	    padding: 0.8em;
+	    @include text-shadow;
+		width: 94%;
+
+		.svg-inline--fa.fa-w-16 {
+		    width: 0.6em;
+		}
+	}
+
 	div.left, div.right {
 		display: inline-block;
 		width: 48%;
 		vertical-align: top;
-
-		blockquote {
-			background: rgba(0,0,0,.5);
-			color: $quoteColor;
-			font-family: Georgia, Times, "Times New Roman", serif;
-		    font-size: 2.5rem;
-		    margin-bottom: 1em;
-		    padding: 0.8em;
-		    @include text-shadow;
-			width: 94%;
-
-			.svg-inline--fa.fa-w-16 {
-			    width: 0.6em;
-			}
-		}
 	}
 
 	div.right {

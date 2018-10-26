@@ -23,6 +23,8 @@
 
 .reveal .align-left {
   text-align: left !important; }
+.reveal .align-center {
+  text-align: center !important; }
 .reveal .mt2 {
   margin-top: 2rem; }
 .reveal .pink {
@@ -295,21 +297,23 @@ body {
     background-color: #111; } }
 .reveal .bosses img {
   width: 24%; }
+.reveal .eniac-women .bosses img {
+  width: 20%; }
+.reveal blockquote {
+  background: rgba(0, 0, 0, 0.5);
+  color: #8fadd0;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  width: 94%; }
+  .reveal blockquote .svg-inline--fa.fa-w-16 {
+    width: 0.6em; }
 .reveal div.left, .reveal div.right {
   display: inline-block;
   width: 48%;
   vertical-align: top; }
-  .reveal div.left blockquote, .reveal div.right blockquote {
-    background: rgba(0, 0, 0, 0.5);
-    color: #8fadd0;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 2.5rem;
-    margin-bottom: 1em;
-    padding: 0.8em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-    width: 94%; }
-    .reveal div.left blockquote .svg-inline--fa.fa-w-16, .reveal div.right blockquote .svg-inline--fa.fa-w-16 {
-      width: 0.6em; }
 .reveal div.right {
   padding-right: 0.4em; }
 .reveal .horizontal-list {
